@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>購物車</title>
+    <link rel="stylesheet" href="../assets/css/all.css">
+    <link rel="stylesheet" href="../assets/css/login.css">
+    <link rel="stylesheet" href="../assets/css/shopping-cart.css">
+    <link rel="stylesheet" href="../assets/js/count2.js">
+    <script src="https://kit.fontawesome.com/fd5006d268.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="body">
+    <div class="header">
+      <a href="question.html" class="select">聯絡我們</a>
+        <a href="member.html" class="select">成員介紹</a>
+        <span class="login">
+            <button onclick="document.getElementById('id02').style.display='block'" type="button" class="btn btn-primary">註冊</button>
+        </span>
+        <div id="id02" class="modal">
+  
+          <div class="modal-content animate">
+              <div class="imgcontainer">
+                <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
+                <img src="../assets/photos/Logo.png" alt="Avatar" class="avatar">
+            </div>
+          
+          
+              <div class="container">
+                <label for="uname"><b>Username</b></label>
+                <input type="text" placeholder="輸入用戶名稱" name="uname" required>
+                
+                <label for="uname"><b>Username</b></label>
+                <input type="text" placeholder="輸入email" name="uname" required>
+
+                <label for="psw"><b>Password</b></label>
+                <input type="password" placeholder="輸入密碼" name="psw" required>
+                
+                <label for="psw"><b>Password</b></label>
+                <input type="password" placeholder="再次輸入密碼" name="psw" required>
+                 
+                <br>
+                <button class="loginbtn" type="submit">註冊</button>
+              </div>
+            </div>
+          </div>
+        <script src="../assets/js/login.js"></script>
+
+
+        <span class="login">
+        <button onclick="document.getElementById('id01').style.display='block'" type="button" class="btn btn-primary">登入</button>
+        </span>
+        <div id="id01" class="modal">
+  
+          <div class="modal-content animate">
+              <div class="imgcontainer">
+                <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+                <img src="../assets/photos/Logo.png" alt="Avatar" class="avatar">
+              </div>
+          
+          
+              <div class="container">
+                <label for="uname"><b>Username</b></label>
+                <input type="text" placeholder="Enter Username" name="uname" required>
+          
+                <label for="psw"><b>Password</b></label>
+                <input type="password" placeholder="Enter Password" name="psw" required>
+                 
+                <label>
+                  <input type="checkbox" checked="checked" name="remember"> Remember me
+                </label>
+                <br>
+                <span class="psw">Forgot <a href="#">password?</a></span>
+                <button class="loginbtn" type="submit">Login</button>
+              </div>
+            </div>
+          </div>
+        <script src="../assets/js/login.js"></script>
+    </div>
+
+<div class="nav">
+    <div class="Logo"><a href="../index.html" ><img src="../assets/photos/Logo.png"></a></div>
+    <div class="search-container">
+        <form action="/action_page.php">
+          <input type="text" placeholder="Search.." name="search">
+          <button type="submit"><i class="fa fa-search"></i></button>
+        </form>
+    </div>
+    <div class="shopping-cart"><a href="../pages/shoppingcart.html"><img src="../assets/photos/shopping-cart.png"></a></div>
+</div>
+
+<div class="list">
+    <div class="shopping-list">
+        <div class="product">
+            <div class="img"><img src="../assets/photos/cable/img4.jfif"></div>
+            <div class="pname">鋁合金高速傳輸充電線</div>
+            <div class="price">$100</div>
+            <div class="amount">數量: 1 </div>
+        </div>
+        <div class="product">
+            <div class="img"><img src="../assets/photos/cable/img4.jfif"></div>
+            <div class="pname">鋁合金高速傳輸充電線</div>
+            <div class="price">$100</div>
+            <div class="amount">數量: 1 </div>
+        </div>
+        <div class="product">
+            <div class="img"><img src="../assets/photos/cable/img4.jfif"></div>
+            <div class="pname">鋁合金高速傳輸充電線</div>
+            <div class="price">$100</div>
+            <div class="amount">數量:1</div>
+        </div>
+        <div class="product">
+            <div class="img"><img src="../assets/photos/cable/img4.jfif"></div>
+            <div class="pname">鋁合金高速傳輸充電線</div>
+            <div class="price">$100</div>
+            <div class="amount">數量:1</div>
+        </div>
+        <div class="t-price">
+          <span>總價: $</span>
+          <span class="total">400</span>
+        </div>
+        <div class="sell">
+          <div class="pay">
+              <span>付款方式:</span>
+              <select name="pay" id="pay">
+              <option value="貨到付款">貨到付款</option>
+              <option value="line pay">line pay</option>
+              <option value="apple pay">apple pay</option>
+              <option value="銀聯">銀聯</option>
+              <option value="visa">Visa</option>
+            </select>
+          </div>
+
+          <div class="transport">
+            <span>運送方式</span>
+            <select name="transport" id="transport">
+              <option value="7-11超商取貨">7-11超商取貨</option>
+              <option value="全家超商取貨">全家超商取貨</option>
+              <option value="宅配到府">宅配到府</option>
+            </select>
+        </div>
+    </div>
+</div>
+</div>
+<button type="button" class="done">去買單</button>
+
+</div>
+</body>
+</html>

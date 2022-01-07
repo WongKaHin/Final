@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/css/production.css">
+    <link rel="stylesheet" href="../assets/css/all.css">
+    <link rel="stylesheet" href="../assets/css/login.css">
+    <link rel="stylesheet" href="../assets/css/rating.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="../assets/js/count2.js">
+    <script src="https://kit.fontawesome.com/fd5006d268.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="body">
+        <div class="header">
+          <a href="question.html" class="select">聯絡我們</a>
+            <a href="member.html" class="select">成員介紹</a>
+            <span class="login">
+                <button onclick="document.getElementById('id02').style.display='block'" type="button" class="btn btn-primary">註冊</button>
+            </span>
+            <div id="id02" class="modal">
+      
+              <div class="modal-content animate">
+                  <div class="imgcontainer">
+                    <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
+                    <img src="../assets/photos/Logo.png" alt="Avatar" class="avatar">
+                </div>
+              
+              
+                  <div class="container">
+                    <label for="uname"><b>Username</b></label>
+                    <input type="text" placeholder="輸入用戶名稱" name="uname" required>
+                    
+                    <label for="uname"><b>Username</b></label>
+                    <input type="text" placeholder="輸入email" name="uname" required>
+    
+                    <label for="psw"><b>Password</b></label>
+                    <input type="password" placeholder="輸入密碼" name="psw" required>
+                    
+                    <label for="psw"><b>Password</b></label>
+                    <input type="password" placeholder="再次輸入密碼" name="psw" required>
+                     
+                    <br>
+                    <button class="loginbtn" type="submit">註冊</button>
+                  </div>
+                </div>
+              </div>
+            <script src="../assets/js/login.js"></script>
+    
+    
+            <span class="login">
+            <button onclick="document.getElementById('id01').style.display='block'" type="button" class="btn btn-primary">登入</button>
+            </span>
+            <div id="id01" class="modal">
+      
+              <div class="modal-content animate">
+                  <div class="imgcontainer">
+                    <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+                    <img src="../assets/photos/Logo.png" alt="Avatar" class="avatar">
+                  </div>
+              
+              
+                  <div class="container">
+                    <label for="uname"><b>Username</b></label>
+                    <input type="text" placeholder="Enter Username" name="uname" required>
+              
+                    <label for="psw"><b>Password</b></label>
+                    <input type="password" placeholder="Enter Password" name="psw" required>
+                     
+                    <label>
+                      <input type="checkbox" checked="checked" name="remember"> Remember me
+                    </label>
+                    <br>
+                    <span class="psw">Forgot <a href="#">password?</a></span>
+                    <button class="loginbtn" type="submit">Login</button>
+                  </div>
+                </div>
+              </div>
+            <script src="../assets/js/login.js"></script>
+        </div>
+    
+    <div class="nav">
+        <div class="Logo"><a href="../index.html" ><img src="../assets/photos/Logo.png"></a></div>
+        <div class="search-container">
+            <form action="/action_page.php">
+              <input type="text" placeholder="Search.." name="search">
+              <button type="submit"><i class="fa fa-search"></i></button>
+            </form>
+        </div>
+        <div class="shopping-cart"><a href="shoppingcart.html"><img src="../assets/photos/shopping-cart.png"></a></div>
+    </div>
+
+    <div class="all">
+        <div class="leftbox">
+            <div class=image><img src="../assets/photos/cable/img2.jfif"></div>
+            <div class="share">
+              <span>分享:</span>
+              <a href="#" class="fa fa-facebook"></a>
+              <a href="#" class="fa fa-twitter"></a>
+              <a href="#" class="fa fa-instagram"></a>
+            </div>
+        </div>
+        <div class="rightbox">
+            <div class="title" style="width:100%;">【SAMSUNG 三星】原廠 A70高速傳輸充電線(平輸密封包裝) 白色</div>
+                <div class="P-price">$100</div>
+                <ul class="btn-numbox">
+                <li><span class="number">數量</span></li>
+                <li>
+                    <ul class="count">
+                        <li><span id="num-jian" class="num-jian" >-</span></li>
+                        <li><span class="input-num" id="input-num">1</span></li>
+                        <li><span id="num-jia" class="num-jia" onclick="add()">+</span></li>
+                    </ul>
+                </li>
+                </ul>
+                <div class="boxes">
+                    <button type="button" class="add-SC">
+                        <i class="fas fa-cart-plus"></i>
+                        <span>加入購物車</span>
+                    </button>
+                </div>
+        </div>
+    </div>
+
+    <div class="product-intro">
+        <div class="intro-title">商品介紹</div>
+        <div class="title1">
+          <span>簡介</span>
+          <div class="int">原廠品質保證 展現高品質、高效能、高效率充電模式</div>
+        </div>
+        
+        <div class="title1">
+            <span>分類</span>
+            <div class="sort">充電線</div>
+        </div>
+        
+        <div class="title1">
+            <span>商品數量</span>
+            <div class="amount">剩餘:</div>
+        </div>
+    </div>
+
+    <div class="comment">
+      <div class="comment-title">用戶評價</div>
+        <div class="comment-box">
+          <div class="rating">
+            <div class="star"><div class="my-rating-6"><script src="../assets/js/rating.js"></script></div></div>
+            <div class="input"><textarea rows="5" cols="50"></textarea></div>
+          </div>
+        </div>
+    </div>
+
+    <div class="comment2">
+      <div class="user">
+        <span>username</span><br><br>
+          <div class="rate">
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star"></span>
+            <span class="fa fa-star"></span></div>
+        </div>
+        <div class="commentbox2">很好用 , 不易斷</div>
+      </div>
+      <br><hr>
+      <div class="comment2">
+        <div class="user">
+          <span>username2</span><br><br>
+            <div class="rate">
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span></div>
+          </div>
+          <div class="commentbox2">便宜又好用</div>
+        </div>
+        <br><hr>
+</div>
+</body>
+</html>

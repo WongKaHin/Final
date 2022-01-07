@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>後台</title>
+    <link rel="stylesheet" href="../assets/css/backstage.css">
+</head>
+<body>
+    <div class="header">
+        <a href="../index.html"><img src="../assets/photos/Logo.png"></a>
+    </div>
+    <div class="body">
+        <div class="box1">
+            <div class="tab">
+                <button class="tablinks" onclick="openCity(event, '銷售情況')" id="defaultOpen">銷售情況</button>
+                <button class="tablinks" onclick="openCity(event, '新增商品')">新增商品</button>
+                <button class="tablinks" onclick="openCity(event, '商品管理')">商品管理</button>
+                <button class="tablinks" onclick="openCity(event, '訂單管理')">訂單管理</button>
+                <button class="tablinks" onclick="openCity(event, '會員資料')">會員資料</button>
+                <button class="tablinks" onclick="openCity(event, '會員資料管理')">會員資料管理</button>
+                <button class="tablinks" onclick="openCity(event, '顧客相關問題')">顧客相關問題</button>
+            </div>
+            <div id="銷售情況"  class="tabcontent">
+                <h3>銷售情況</h3>
+                <p>
+                    <ul>
+                        <li>今天售出:##個</li>
+                        <li>已售出:##個</li>
+                        <li>總收入: $##</li>
+                    </ul>
+                </p>
+        </div>
+            <div id="新增商品"  class="tabcontent">
+                <h3>新增商品</h3>
+                <p>
+                    <ul>
+                        <li>商品名稱:<input type="text"></li>
+                        <li>商品價格:<input type="text"></li>
+                        <li>商品簡介:<input type="text"></li>
+                    </ul>
+                    <button type="submit">新增</button>
+                </p>
+        </div>
+            <div id="商品管理"  class="tabcontent">
+                <h3>商品管理</h3>
+                <p>
+                    <ul>
+                        <li>想要改的商品:<input type="text"></li>
+                        <li>商品名稱:<input type="text"></li>
+                        <li>商品價格:<input type="text"></li>
+                        <li>商品簡介:<input type="text"></li>
+                        <button type="submit">更改</button>
+                        <button type="button">刪除商品</button>
+                    </ul>
+                </p>
+        </div>
+
+    <div id="會員資料"  class="tabcontent">
+        <h3>會員資料</h3>
+        <p>
+            <ul>
+                <li>總會員:##個</li>
+                <li>瀏覽數:##個</li>
+                <li>瀏覽時長:##小時</li>
+                <li>今天新增的會員:##個</li>
+            </ul>
+        </p>
+</div>
+    
+<div id="訂單管理"  class="tabcontent">
+    <h3>訂單管理</h3>
+    <p>
+            <table>
+                <tr>
+                    <td> </td><td>收件人</td><td>住址</td><td>時間</td><td>電話</td><td></td>
+                </tr><tr>
+                    <td>1</td><td>X先生</td><td>XX街X樓</td><td>2021/12/25</td><td>XXXX XXX XXX</td>
+                </tr><tr>
+                    <td>2</td><td>X先生</td><td>XX街X樓</td><td>2021/12/26</td><td>XXXX XXX XXX</td>
+                </tr><tr>
+                    <td>3</td><td>X先生</td><td>XX街X樓</td><td>2021/12/27</td><td>XXXX XXX XXX</td>
+                </tr><tr>
+                    <td>4</td><td>X先生</td><td>XX街X樓</td><td>2021/12/28</td><td>XXXX XXX XXX</td>
+                </tr>
+            </table>
+        <ul>
+            <li>更改:<select class="bs">
+                <option value="收件人">收件人</option>
+                <option value="住址">住址</option>
+                <option value="時間">時間</option>
+                <option value="電話">電話</option>
+            </select>
+        <input type="text">
+        <button type="submit">更改</button>
+    </li>
+        </ul>
+    </p>
+</div>
+
+<div id="會員資料管理"  class="tabcontent">
+    <h3>會員資料管理</h3>
+    <p>
+        <table>
+            <tr>
+                <td></td><td>姓名</td><td>帳號</td><td>密碼</td><td>手機</td><td>地址</td><td>Email</td>
+                </tr><tr>
+                <td>1</td><td>X先生</td><td>1234</td><td>1234</td><td>1234 123 123</td><td>XX街x樓</td><td>1234@gmail.com</td>
+            </tr><tr>
+                <td>2</td><td>X小姐</td><td>1234</td><td>1234</td><td>1234 123 123</td><td>XX街x樓</td><td>1234@gmail.com</td>
+            </tr><tr>
+                <td>3</td><td>X先生</td><td>1234</td><td>1234</td><td>1234 123 123</td><td>XX街x樓</td><td>1234@gmail.com</td>
+            </tr><tr>
+                <td>4</td><td>X小姐</td><td>1234</td><td>1234</td><td>1234 123 123</td><td>XX街x樓</td><td>1234@gmail.com</td>
+            </tr>
+        </table>
+        <ul>
+            <li>會員名稱 : <input type="text"></li><br>
+            <li>手機號碼 : <input type="text"></li><br>
+            <li>住址 : <input type="text"></li><br>
+            <li>Email : <input type="text"></li><br>
+            <button type="button">新增</button>
+            <button type="button">更改</button>
+        </ul>
+    </p>
+</div>
+
+<div id="顧客相關問題"  class="tabcontent">
+    <h3>顧客相關問題</h3>
+    <p>
+        <table>
+            <tr>
+                <td></td><td>姓名</td><td>電話</td><td>email</td><td>時間</td><td>問題</td>
+            </tr><tr>
+                <td>1</td><td>XX先生</td><td>XXXX XXX XXX</td><td>1234@gmail.com</td><td>12/31</td><td>1236791249757919123468908177</td>
+            </tr><tr>
+                <td>2</td><td>XX先生</td><td>XXXX XXX XXX</td><td>2345@gmail.com</td><td>12/31</td><td>尺寸不對</td>
+            </tr><tr>
+                <td>3</td><td>XX先生</td><td>XXXX XXX XXX</td><td>3456@gmail.com</td><td>12/31</td><td>商品有瑕疵</td>
+            </tr><tr>
+                <td>4</td><td>XX先生</td><td>XXXX XXX XXX</td><td>4567@gmail.com</td><td>12/31</td><td>假貨</td>
+            </tr>
+        </table>
+    </p>
+</div>
+    </div>
+</div>
+<script src="../assets/js/backstage.js"></script>
+</body>
+</html>

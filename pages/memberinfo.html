@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/css/all.css">
+    <link rel="stylesheet" href="../assets/css/login.css">
+    <link rel="stylesheet" href="../assets/css/memberinfo.css">
+    <script src="https://kit.fontawesome.com/fd5006d268.js" crossorigin="anonymous"></script>
+    <title>會員簡介</title>
+</head>
+<body>
+    <div class="body">
+        <div class="header">
+            <a href="question.html" class="select">聯絡我們</a>
+            <a href="member.html" class="select">成員介紹</a>
+            <div class="logined">
+              <div class="user">會員:123</div>
+              <button type="button" onclick="location.href='../index.html';">登出</button>
+            </div>
+        </div>
+    
+    <div class="nav">
+        <div class="Logo"><a href="../index.html" ><img src="../assets/photos/Logo.png"></a></div>
+        <div class="search-container">
+            <form action="/action_page.php">
+              <input type="text" placeholder="Search.." name="search">
+              <button type="submit"><i class="fa fa-search"></i></button>
+            </form>
+        </div>
+        <div class="shopping-cart"><a href="shoppingcart.html"><img src="../assets/photos/shopping-cart.png"></a></div>
+    </div>   
+    
+    <div class="tab">
+        <button class="tablinks" onclick="openCity(event, '會員資訊')" id="defaultOpen">會員資訊</button>
+        <button class="tablinks" onclick="openCity(event, '更改資料')">更改資料</button>
+        <button class="tablinks" onclick="openCity(event, '購買紀錄')">購買紀錄</button>
+      </div>
+      
+      <div id="會員資訊" class="tabcontent">
+        <h3>會員資訊</h3>
+        <p>
+            <ul>
+            <li>會員名稱 : 123</li> <br> 
+            <li>Email : 123@gmail.com</li><br> 
+            <li>性別 : 男</li><br> 
+            <li>生日 : 2000-1-1</li><br> 
+            <li>手機 : 1234 123 123</li>     <br>   
+        </ul>
+        </p>
+      </div>
+
+      <div id="更改資料" class="tabcontent">
+        <h3>更改資料</h3>
+        <p>
+            <ul>
+            <li>會員名稱 : <input type="text"></li><br> 
+            <li>Email : <input type="text"></li><br> 
+            <li>性別 : <input type="text"></li><br> 
+            <li>生日 : <input type="date"></li><br> 
+            <li>手機 : <input type="tel"></li><br> 
+            <button type="submit">更改</button>
+            <button type="button">刪除帳號</button>         
+        </ul>
+        </p>
+      </div>
+
+      <div id="購買紀錄" class="tabcontent">
+        <h3>購買紀錄</h3>
+        <p>
+            <div class="table">
+                <div class="product">
+                    <div class="pname">名稱</div>
+                    <div class="price">金額</div>
+                    <div class="amount">數量</div>
+                </div>
+                    <div class="product">
+                        <div class="img"><img src="../assets/photos/cable/img4.jfif"></div>
+                        <div class="pname">鋁合金高速傳輸充電線</div>
+                        <div class="price">$100</div>
+                        <div class="amount">數量:1</div>
+                </div>
+                <div class="product">
+                    <div class="img"><img src="../assets/photos/phonecase/pc1.jpg"></div>
+                    <div class="pname">鬼滅之刃手機殼</div>
+                    <div class="price">$100</div>
+                    <div class="amount">數量:1</div>
+            </div>
+            </div>
+        </p>
+      </div>
+</div>
+<script src="../assets/js/backstage.js"></script>
+</body>
+</html>
